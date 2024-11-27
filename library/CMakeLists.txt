@@ -410,7 +410,7 @@ if(DPP_FORMATTERS)
 	target_compile_definitions(dpp PUBLIC DPP_FORMATTERS)
 endif()
 
-if (NOT BUILD_SHARED_LIBS
+if (NOT BUILD_SHARED_LIBS)
 	if (HAVE_VOICE)
                 add_library(dppstatic STATIC
                         $<TARGET_OBJECTS:dpp>
